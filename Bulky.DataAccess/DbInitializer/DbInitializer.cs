@@ -9,6 +9,7 @@ namespace BulkyBook.DataAccess.DbInitializer;
 
 public class DbInitializer : IDbInitializer
 {
+
     private readonly UserManager<IdentityUser> _userManager;
     private readonly RoleManager<IdentityRole> _roleManager;
     private readonly ApplicationDbContext _db;
@@ -52,10 +53,10 @@ public class DbInitializer : IDbInitializer
             //if roles are not created, then we will create admin user as well
             _userManager.CreateAsync(new ApplicationUser
             {
-                UserName = "admin@gmail.com",
-                Email = "admin@gmail.com",
-                Name = "Jake Johns",
-                PhoneNumber = "1111333344",
+                UserName = "admin@dotnetmastery.com",
+                Email = "admin@dotnetmastery.com",
+                Name = "Bhrugen Patel",
+                PhoneNumber = "1112223333",
                 StreetAddress = "test 123 Ave",
                 State = "IL",
                 PostalCode = "23422",
